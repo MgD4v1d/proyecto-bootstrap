@@ -1,0 +1,10 @@
+{
+  "name": "consorciocarretero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dave",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
