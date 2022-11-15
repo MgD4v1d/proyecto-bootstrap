@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+/*----------------------------------------
+    HTML RESET
+----------------------------------------*/
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+$bgColorHeader: #333333;
+$textColorHeader: #ffffff;
+$textActiveHeader: #ffffff;
+
+.fa-stack-2x {
+    font-size: 1rem;
+}
+
+/*----------------------------------------
+      BTN'S
+  ----------------------------------------*/
+
+.btn-one {
+    font-weight: 600;
+    background-color: #cc4e40;
+    border-color: #cc4e40;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding-top: 14px;
+}
+
+.btn-one:hover {
+    color: white;
+}
+
+.btn-two {
+    font-weight: 600;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding-top: 14px;
+}
+
+.btn-two:hover {
+    color: #000;
+}
+
+.btn-three {
+    font-weight: 600;
+    background-color: #cc4e40;
+    border-color: #cc4e40;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding-top: 14px;
+}
+
+.btn-three:hover {
+    color: white;
+}
+
+.btn-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    left: 15px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    z-index: 100;
+    transition: all ease 1s;
+
+    i {
+        color: #fff;
+        transition: all ease 1s;
+    }
+}
+
+.btn-float:hover {
+    text-decoration: none;
+    background-color: #fff;
+
+    i {
+        color: #25d366;
+    }
+}
+
+.my-float i {
+    margin-top: 12px;
+}
+
+/*----------------------------------------
+      Navbar
+  ----------------------------------------*/
+
+.icon-background-header {
+    color: $textActiveHeader;
+}
+
+.icon-color-header {
+    font-size: 1.2rem;
+    color: $bgColorHeader;
+}
+
+.bg-header {
+    background-color: $bgColorHeader;
+}
+
+.header-one {
+    min-height: 95px;
+}
+
+.navbar {
+    min-height: 95px;
+    margin-bottom: 0;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 5px;
+}
+
+.nav-item {
+    align-self: end;
+}
+
+.linea-separadora{
+    color: #00aeef;
+    padding: 0.5rem;
+}
+
+.navbar.navbar-solid {
+    min-height: 80px;
+    background-color: var(--bg-menu-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $textColorHeader;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: $textActiveHeader;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.icon-background {
+    color: #fdf1ea;
+}
+
+.icon-color {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $textActiveHeader;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $textActiveHeader;
+}
+
+.btn-whats-zero {
+    background: #000000;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btn-whats-zero:hover {
+    color: white;
+}
+
+/* ---------------------------------------------- /*
+*  11. Scroll to top
+/* ---------------------------------------------- */
+
+.scroll-up {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 1.8em;
+    right: 1.8em;
+}
+
+.scroll-up a {
+    background-color: #00aeef;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.scroll-up a i {
+    color: #fff;
+    padding-top: 8px;
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+    background-color: rgba(235, 235, 235, 0.8);
+    color: #222222;
+}
+
+.scroll-up a:hover i,
+.scroll-up a:active i {
+    color: #222222;
+}
+
+/*----------------------------------------
+      END
+  ----------------------------------------*/
+
+#end {
+    background: #003c80;
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*----------------------------------------
+      PRIVACIDAD
+  ----------------------------------------*/
+
+#privacidad {
+    position: relative;
+    background: #3f2805;
+    color: #ffffff;
+    padding-top: 4%;
+}
+
+#privacidad {
+    ul li {
+        font-weight: 400;
+        font-style: italic;
+        color: #efc31a;
+    }
+}
+
+#privacidad h2,
+strong {
+    font-weight: 700;
+    color: #efc31a;
+}
+
+#privacidad h3 {
+    font-weight: 700;
+    color: #efc31a;
+}
+
+#privacidad p {
+    font-weight: 400;
+    color: #ffffff;
+    text-align: justify;
+}
+
+/*----------------------------------------
+      DEFAULT
+  ----------------------------------------*/
+
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.wait {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    z-index: 999999;
+}
+
+#gracias {
+    background-color: $bgColorHeader;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#gracias h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #00aeef;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#gracias p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #00aeef;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#gracias .btn-enlaces-thank-you {
+    background: transparent;
+    border-radius: 4px;
+    color: #00aeef;
+    line-height: 40px;
+    padding: 0 35px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}

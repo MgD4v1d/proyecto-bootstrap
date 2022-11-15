@@ -4,10 +4,7 @@ module.exports = {
   mode: "production",
 
   entry: {
-    plugins: "./src/js/plugins/theme.js",
-    counterup: "./src/js/plugins/counterup.js",
-    video: "./src/js/plugins/video.js",
-    filterVideo: "./src/js/plugins/filterVideo.js",
+    plugins: "./src/js/plugins/plugins.js",
     gallery: "./src/js/plugins/gallery.js",
   },
 

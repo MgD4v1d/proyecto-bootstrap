@@ -1,0 +1,45 @@
+@mixin breakpoint($point){
+  @if $point == mobile {
+    @media only screen and (max-width: 420px){
+      @content
+    }
+  }
+
+  
+  @if $point == laptop {
+    @media only screen and (max-width: 768px){
+      @content
+    }
+  }
+  
+  @if $point == custom990 {
+    @media only screen and (max-width: 990px) {
+      @content
+    }
+  }
+
+  @if $point == custom992 {
+    @media only screen and (min-width: 992px) and (max-width: 1399px){
+      @content
+    }
+  }
+
+  @if $point == desktopRetina {
+    @media only screen and (max-width: 1440px){
+      @content
+    }
+  }
+
+  @if $point == desktop {
+    @media only screen and (max-width: 1224px){
+      @content
+    }
+  }
+
+  @if $point == largescreens {
+    @media only screen and (max-width: 1824px){
+      @content
+    }
+  }
+
+}
